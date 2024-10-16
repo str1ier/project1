@@ -1,0 +1,357 @@
+@font-face {
+    src: url(./assets/Alice-Regular.ttf);
+    font-family: Alice;
+}
+
+@font-face {
+    src: url(./assets/Poppins-Regular.ttf);
+    font-family: Poppins;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Alice;
+}
+
+:root {
+    --green: #43cb48;
+    --white: #fff;
+    --neutral-2: #23262F;
+    --neutral-4: #777e90;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 136px;
+    gap: 80px;
+    background: var(--white);
+}
+
+.title {
+    width: 770px;
+    height: 139px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+h1 {
+    font-family: var();
+    font-weight: 400;
+    font-size: 48px;
+    text-transform: capitalize;
+    color: var(--neutral-2);
+}
+
+.green-text {
+    color: var(--green);
+}
+
+.title-text-desctop {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: var(--neutral-4);
+}
+
+.title-text-mobile {
+    display: none;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: var(--neutral-4);
+}
+
+.cuisine {
+    border-radius: 8px;
+    padding: 6px;
+    width: 672px;
+    height: 74px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.cuisine-type {
+    font-family: Poppins;
+}
+
+.food {
+    border-radius: 8px;
+    width: 196px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+}
+
+.green-card {
+    background: var(--green);
+    color: var(--white);
+}
+
+.cards {
+    width: 1168px;
+    height: 481px;
+    display: flex;
+    gap: 74px;
+}
+
+.food-card {
+    border-radius: 7px;
+    width: 340px;
+    height: 481px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.info {
+    padding: 0px 24px;
+    width: 340px;
+    height: 125px;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: -0.01em;
+}
+
+.rate {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.views {
+    font-family: Poppins;
+}
+
+.buy {
+    display: flex;
+    gap: 70px;
+}
+
+.price {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    text-transform: capitalize;
+    color: var(--green);
+}
+
+.order {
+    border-radius: 6px;
+    /* padding: 8px 16px; */
+    width: 117px;
+    height: 40px;
+    border: none;
+    background: var(--green);
+    color: var(--white);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    font-family: Poppins;
+}
+
+.order-text {
+    font-family: Poppins;
+}
+
+@media (max-width: 1024px) {
+    main {
+        padding: 80px 52px;
+        width: 1024px;
+        height: 1329px;
+    }
+
+    .cards {
+        width: 919px;
+        height: 384px;
+        gap: 32px;
+    }
+
+    .food-card {
+        border-radius: 15px;
+        padding: 24px 0px;
+        width: 285px;
+        height: 384px;
+    }
+
+    .tokpokki {
+        padding: 0px 28px;
+        width: 283px;
+        height: 200px;
+    }
+
+    .info {
+        padding: 0px 24px;
+        width: 283px;
+        height: 112px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .rate {
+        width: 190px;
+        height: 21px;
+    }
+
+    .star {
+        width: 96px;
+        height: 16px;
+    }
+
+    .views {
+        font-size: 14px;
+    }
+
+    .buy {
+        width: 235px;
+        height: 40px;
+    }
+
+    .price {
+        font-size: 28px;
+        line-height: 143%;
+    }
+
+    .order {
+        border-radius: 8px;
+        width: 117px;
+        height: 36px;
+        display: flex;
+    }
+
+    .order-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 374px) {
+
+    main {
+        width: 374px;
+        height: 2929px;
+        align-items: center;
+        padding: 0;
+        gap: 0;
+    }
+
+    .title {
+        width: 284px;
+        height: 134px;
+        margin: 40px 0 44px 0;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .title-text-mobile {
+        display: block;
+        font-size: 18px;
+    }
+
+    .title-text-desctop {
+        display: none;
+    }
+
+    .cuisine {
+        border-radius: 8px;
+        padding: 6px;
+        width: 328px;
+        height: 74px;
+        margin-bottom: 60px;
+    }
+
+    .food {
+        display: none;
+    }
+
+    .green-card {
+        display: block;
+        display: flex;
+        border-radius: 8px;
+        padding: 0px 12px;
+        width: 316px;
+        height: 62px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        width: 373px;
+        height: 2588px;
+    }
+
+    .food-card {
+        border-radius: 15px;
+        padding: 24px 0px;
+        width: 285px;
+        height: 384px;
+        gap: 24px;
+    }
+
+    .tokpokki {
+
+        width: 283px;
+        height: 200px;
+    }
+
+    .info {
+        width: 283px;
+        height: 112px;
+        gap: 12px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .rate {
+        width: 190px;
+        height: 21px;   
+    }
+
+    .star {
+        width: 96px;
+        height: 16px;
+    }
+
+    .views {
+        font-size: 14px;
+    }
+
+    .buy {
+        width: 235px;
+        height: 40px;
+        gap: 44px;
+    }
+
+    .price {
+        font-size: 28px;
+    }
+
+    .order {
+        border-radius: 8px;
+        padding: 8px 16px;
+        width: 117px;
+        height: 36px;
+    }
+}
+
